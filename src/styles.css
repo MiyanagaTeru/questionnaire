@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	position: absolute;
+	background: #eee;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	margin: 30px auto;
+	width: 100%;
+	max-width: 520px;
+	height: calc(100% - 60px);
+	max-height: 980px;
+	background: #fff;
+}
+
+.question {
+	height: 100%;
+	width: 100%;
+	padding: 2em;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.description {
+	padding: 0.5em 0 0 0;
+}
+
+.choice {
+	box-sizing: border-box;
+	margin: 0.5em 0;
+	border: 1px solid #ccc;
+}
+
+.choiceLabel {
+	padding: 0.5em;
+	display: block;
+	cursor: pointer;
+}
+
+.choiceInput {
+	width: 0;
+	height: 0;
+	position: absolute;
+	display: none;
+}
+
+.choiceInput:checked ~ label {
+	background: #aee3ff;
+}
+
+.navigation {
+	padding: 1em 0 0 0;
+}
+
+.navButton {
+	width: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	padding: 1em 0;
+	cursor: pointer;
+}
+.disabled {
+	opacity: 0.3;
+}
+
+.back {
+	border-right: 1px solid #ccc;
+}
